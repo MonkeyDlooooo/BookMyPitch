@@ -26,7 +26,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 
 // Định nghĩa middleware để thêm base URL vào mỗi request
 app.use((req, res, next) => {
-  req.base_url = process.env.BASE_URL;
+  req.base_url = "https://bookmypitch-9sxr.onrender.com/";
   next();
 });
 
